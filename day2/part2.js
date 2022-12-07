@@ -1,20 +1,14 @@
-const {readFileSync, promises: fsPromises} = require('fs');
+const { readFileSync } = require('fs')
+const location = 'C:/Users/jonashs/source/repos/adventofcoding/day2/input.txt'
+const file = readFileSync(location, 'utf-8').split(/\r?\n/)
 
-function syncReadFile(filename) {
-  const contents = readFileSync(filename, 'utf-8');
-  const arr = contents.split(/\r?\n/);
-  return arr;
-}
-const file = syncReadFile('C:/Users/jonashs/source/repos/adventofcoding/day2/input.txt')
-
-
-const val = {
+val = {
   X: 0,
   Y: 3,
   Z: 6,
 }
 
-const stat = {
+stat = {
   AY: 1,
   AX: 3,
   AZ: 2,
@@ -28,7 +22,7 @@ const stat = {
   CZ: 1,
 }
 
-var total = 0
+total = 0
 file.map((item) => {
   total += Number(val[item[2]])
   total += Number(stat[`${item[0]}${item[2]}`])
