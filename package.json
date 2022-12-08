@@ -1,0 +1,27 @@
+{
+  "name": "adventofcoding",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jonashelgi/AdventOfCode.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/jonashelgi/AdventOfCode/issues"
+  },
+  "homepage": "https://github.com/jonashelgi/AdventOfCode#readme",
+  "devDependencies": {
+    "@babel/cli": "^7.19.3",
+    "@babel/core": "^7.20.5"
+  },
+  "dependencies": {
+    "fs": "^0.0.1-security"
+  }
+}

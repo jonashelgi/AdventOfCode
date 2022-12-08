@@ -1,25 +1,25 @@
-const { readFileSync } = require('fs')
+import { readFileSync } from 'fs'
 const location = 'C:/Users/jonashs/source/repos/adventofcoding/day2/input.txt'
 const file = readFileSync(location, 'utf-8').split(/\r?\n/)
 
-win = {
+const win = {
   A: 'Y',
   B: 'Z',
   C: 'X',
 }
 
-tie = {
+const tie = {
   A: 'X',
   B: 'Y',
   C: 'Z',
 }
-score = {
+const score = {
   Z: 3,
   X: 1,
   Y: 2,
 }
 
-total = 0
+var total = 0
 file.map((item) => {
   if (win[item[0]].includes(item[2])) {
     total += 6
